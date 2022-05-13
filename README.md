@@ -15,7 +15,7 @@ Note:
 1. The created SSH key should be no password or there are errors encoutered while running `terraform apply`
 2. Use `oci ce node-pool-options get --node-pool-option-id all` to navigate available image id for nodes. It seems only Oracle Linux is supported (not sure)
 3. Check the number of domains of the chosen region for Oracle Cloud from 
-   `https://docs.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm`
+   (https://docs.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm)
 
 The instruction comes from 
 [Free Oracle Cloud Kubernetes Cluster With Terraform] (https://arnoldgalovics.com/oracle-cloud-kubernetes-terraform/)
