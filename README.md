@@ -16,6 +16,7 @@ Note:
 2. Use `oci ce node-pool-options get --node-pool-option-id all` to navigate available image id for nodes. It seems only Oracle Linux is supported (not sure)
 3. Check the number of domains of the chosen region for Oracle Cloud from 
    (https://docs.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm)
+4. It will be encountered as a resource limitation error while using trial subscription. The billing program should be upgraded to pay-as-you-go plan to go for the instruction. However, it may cost no more money.
 
 The instruction comes from 
 [Free Oracle Cloud Kubernetes Cluster With Terraform] (https://arnoldgalovics.com/oracle-cloud-kubernetes-terraform/)
