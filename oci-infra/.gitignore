@@ -43,3 +43,7 @@ override.tf.json
 terraform.rc
 
 # End of https://www.toptal.com/developers/gitignore/api/terraform
+
+# individual setting that may not be exposed to public
+env.sh
+tfc.tf
