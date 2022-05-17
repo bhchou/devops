@@ -34,7 +34,7 @@ jobs:
           echo "/home/runner/bin" >> $GITHUB_PATH
           exec -l $SHELL
           oci setup repair-file-permissions --file /home/runner/.oci/config
-          oci setup repair-file-permissions --file /home/runner/.oci/key.pem
+          oci setup repair-file-permissions --file /home/runner/.oci/oci_api_key_nopass.pem
       - name: 'Install kubectl'
         run: |
           mkdir /tmp/.kube
@@ -48,7 +48,7 @@ jobs:
       - name: Login to Docker registry
         uses: docker/login-action@v1
         with:
-          registry: ${{ secrets.DOCKER_URL }}
+          registry: ${{ secrets.DOCKER_URL_LOGIN }}
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Available platforms
